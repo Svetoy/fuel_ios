@@ -1,0 +1,67 @@
+{
+  "language" : "Русский",
+
+  "stations" : "Станции",
+  "pipelines" : "Трубопровод",
+  "profile" : "Профиль",
+  "applications" : "Заявка",
+  "history" : "История",
+
+  "search": "Поиск...",
+
+  "stableState" : " Стабильно",
+  "problemState" : " Опасность",
+  "temperature" : "Температура: ",
+  "consumption" : "Расход: ",
+  "pressure" : "Давление: ",
+  "activity" : "Активность: ",
+  "notify" : "Уведомить",
+  "lmin" : " л/мин",
+  "bar" : " бар",
+  "active" : " Активна",
+  "notActive" : " Не активна",
+  "pipe": "Трубопровод: ",
+  "litr": "л",
+
+  "emaill" : "Email:",
+  "dateOfBirth" : "Дата рождения:",
+  "phoneNumber" : "Номер телефона:",
+  "resetPassword" : "Сбросить пароль",
+  "logout" : "Выход",
+
+  "sendApplication" : "Отправка заявки",
+  "chooseCity" : "Выберите город",
+  "selectStation" : "Выберите станцию",
+  "type" : "Выберите тип заявки",
+  "lableComment" : "Комментарии",
+  "sendButton" : "Отправить заявку",
+  "applicationIsSent" : "Заявка отправлена",
+  "supportIsSent" : "Заявка отправлена",
+  "writeComment" : "Пожалуйста, напишите комментарии",
+
+  "more" : "Подробнее",
+  "application" : "Заявка",
+  "support" : "Тех. поддержка",
+  "azs" : "АЗС: ",
+  "city" : "Город: ",
+  "date" : "Дата: ",
+  "ucomment": "Ваш комментарий",
+  "answer": "Ответ",
+  "reset": "Переотправить",
+
+  "forgotPassword" : "Забыли пароль?",
+  "email" : "Email",
+  "password" : "Пароль",
+  "fill" : "Пожалуйста заполните поля",
+  "signIn" : "Вход",
+
+  "fuelQuantity": "  Количество топлива: ",
+  "fuelPressure": "  Давление топлива: ",
+  "fuelConsumption": "  Расход топлива: ",
+  "flame": "  Пламя: ",
+  "station": "Станция: ",
+
+  "dontHaveStation" : "Вы не имеете станции",
+  "dontHavePipeline" : "Вы не имеете трубопровод",
+  "dohtHaveHistory" : "Вы не подавали заявок"
+}

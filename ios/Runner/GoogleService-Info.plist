@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>491275522414-e1inh0upebtiqtb33vltq3b20tt7qivl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.491275522414-e1inh0upebtiqtb33vltq3b20tt7qivl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA2v34r8OMfIR6PliCXTAE1CgXTesvyWLg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>491275522414</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.todoFlutter</string>
+	<key>PROJECT_ID</key>
+	<string>automaticcontrol01</string>
+	<key>STORAGE_BUCKET</key>
+	<string>automaticcontrol01.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:491275522414:ios:c4be2fe90b33ece338717f</string>
+	<key>DATABASE_URL</key>
+	<string>https://automaticcontrol01-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,93 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=emulator-5554 --start-paused --dart-define=flutter.inspector.structuredErrors=true --devtools-server-address=http://127.0.0.1:9106 lib\main.dart
+
+## exception
+
+RangeError: RangeError (index): Invalid value: Valid value range is empty: 0
+
+```
+#0      _StringBase.[] (dart:core-patch/string_patch.dart:255:55)
+#1      LocalizationsGenerator._isValidGetterAndMethodName (package:flutter_tools/src/localizations/gen_l10n.dart:1011:13)
+#2      LocalizationsGenerator.loadResources (package:flutter_tools/src/localizations/gen_l10n.dart:1036:12)
+#3      generateLocalizations (package:flutter_tools/src/localizations/gen_l10n.dart:68:9)
+#4      GenerateLocalizationsTarget.build (package:flutter_tools/src/build_system/targets/localizations.dart:59:5)
+#5      _BuildInstance._invokeInternal (package:flutter_tools/src/build_system/build_system.dart:836:27)
+<asynchronous suspension>
+#6      FlutterBuildSystem.build (package:flutter_tools/src/build_system/build_system.dart:603:16)
+<asynchronous suspension>
+#7      generateLocalizationsSyntheticPackage (package:flutter_tools/src/dart/generate_synthetic_packages.dart:58:30)
+<asynchronous suspension>
+#8      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:1250:7)
+<asynchronous suspension>
+#9      FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:1125:27)
+<asynchronous suspension>
+#10     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#11     CommandRunner.runCommand (package:args/command_runner.dart:209:13)
+<asynchronous suspension>
+#12     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:288:9)
+<asynchronous suspension>
+#13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#14     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:236:5)
+<asynchronous suspension>
+#15     run.<anonymous closure>.<anonymous closure> (package:flutter_tools/runner.dart:62:9)
+<asynchronous suspension>
+#16     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:150:19)
+<asynchronous suspension>
+#17     main (package:flutter_tools/executable.dart:92:3)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.5.3, on Microsoft Windows [Version 10.0.22000.466], locale ru-RU)
+    • Flutter version 2.5.3 at C:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 18116933e7 (3 months ago), 2021-10-15 10:46:35 -0700
+    • Engine revision d3ea636dc5
+    • Dart version 2.14.4
+
+[!] Android toolchain - develop for Android devices (Android SDK version 32.0.0)
+    • Android SDK at C:\Users\WW\AppData\Local\Android\sdk
+    ✗ cmdline-tools component is missing
+      Run `path/to/sdkmanager --install "cmdline-tools;latest"`
+      See https://developer.android.com/studio/command-line for more details.
+    ✗ Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/docs/get-started/install/windows#android-setup for more details.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[✓] Android Studio (version 2020.3)
+    • Android Studio at C:\Program Files\Android\Android Studioo
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.10+0-b96-7249189)
+
+[✓] IntelliJ IDEA Community Edition (version 2021.2)
+    • IntelliJ at C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.1
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+
+[✓] VS Code (version 1.63.2)
+    • VS Code at C:\Users\WW\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.32.0
+
+[✓] Connected device (3 available)
+    • Android SDK built for x86 (mobile) • emulator-5554 • android-x86    • Android 8.0.0 (API 26) (emulator)
+    • Chrome (web)                       • chrome        • web-javascript • Google Chrome 97.0.4692.71
+    • Edge (web)                         • edge          • web-javascript • Microsoft Edge 97.0.1072.69
+
+! Doctor found issues in 1 category.
+```

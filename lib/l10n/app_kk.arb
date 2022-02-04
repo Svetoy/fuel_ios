@@ -1,0 +1,67 @@
+{
+  "language" : "Қазақша",
+
+  "stations" : "Станциялар",
+  "pipelines" : "Құбыр",
+  "profile" : "Профиль",
+  "applications" : "Өтінім",
+  "history" : "Тарих",
+
+  "search": "Іздеу...",
+
+  "stableState" : " Тұрақты",
+  "problemState" : " мұнда мәселе",
+  "temperature" : "Температура: ",
+  "consumption" : "Шығыны: ",
+  "pressure" : "Қысым: ",
+  "activity" : "Белсенділігі: ",
+  "notify" : "Хабарлау",
+  "lmin" : " л/мин",
+  "bar" : " бар",
+  "active" : " Белсенді",
+  "notActive" : " Белсенді емес",
+  "pipe": "Құбыр: ",
+  "litr": " л",
+
+  "emaill" : "Электрондық:",
+  "dateOfBirth" : "Туған күні:",
+  "phoneNumber" : "Телефон нөмірі:",
+  "resetPassword" : "Құпиясөзді ауыстыру",
+  "logout" : "Шығу",
+
+  "sendApplication" : "Өтінімді жіберу",
+  "chooseCity" : "Қаланы таңдаңыз",
+  "selectStation" : "Станцияны таңдаңыз",
+  "type" : "Өтінім түрін таңдаңыз",
+  "lableComment" : "Пікір",
+  "sendButton" : "Өтінімді жіберу",
+  "applicationIsSent" : "Өтінім жіберілді",
+  "supportIsSent" : "Өтінім жіберілді",
+  "writeComment" : "Өтініш, пікір жазыңыз",
+
+  "more" : "Толығырақ",
+  "application" : "Өтінім",
+  "support" : "Техникалық қолдау",
+  "azs" : "ЖҚС: ",
+  "city" : "Қала: ",
+  "date" : "Күні: ",
+  "ucomment": "Сіздің пікіріңіз",
+  "answer": "Жауабы бар",
+  "reset": "Қайтадан жіберу",
+
+  "forgotPassword" : "Құпия сөзді ұмыттыңыз ба?",
+  "email" : "Электрондық пошта",
+  "password" : "Құпиясөз",
+  "fill" : "Өрістерді толтырыңыз",
+  "signIn" : "Кіру",
+
+  "fuelQuantity": "  Отын мөлшері: ",
+  "fuelPressure": "  Отын қысымы: ",
+  "fuelConsumption": "  Отын шығыны: ",
+  "flame": "  Жалын: ",
+  "station": "Станция: ",
+
+  "dontHaveStation" : "Сізде станция жоқ",
+  "dontHavePipeline" : "Сізде құбыр жоқ",
+  "dohtHaveHistory" : "Сіз өтініш жіберген жоқсыз"
+}
