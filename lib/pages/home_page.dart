@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
   List<int> pressures = [];
   List<int> fire = [];
   List<int> flow = [];
-  List<double> tempM = [];
+  List<int> tempM = [];
 
   List<List<dynamic>> data = [];
 
@@ -44,6 +44,8 @@ class _HomePageState extends State<HomePage> {
   int p = 0;
 
   var photoUrl = '';
+  var azsPhotoUrl = '';
+  List<String> regNameForPhoto = [];
 
   @override
   void initState() {
@@ -75,12 +77,15 @@ class _HomePageState extends State<HomePage> {
             .child(regKey);
         allAzs.clear();
 
+        regNameForPhoto.clear();
+
         obl.once().then((DataSnapshot snapAzs) {
           var azss = snapAzs.value;
 
           azss.forEach((key, value) {
             ///Блок фильтра азс
             if (dataList.contains(key)) {
+
               allAzs.add(key);
 
               var fuel = FirebaseDatabase.instance
@@ -181,7 +186,7 @@ class _HomePageState extends State<HomePage> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
-                      image: NetworkImage(photoUrl),
+                      image:  NetworkImage(photoUrl),
                     ),
                     border: Border.all(width: 1, color: Colors.orange),
                   ),
@@ -209,7 +214,7 @@ class _HomePageState extends State<HomePage> {
                           itemCount: allAzs.length,
                           itemBuilder: (BuildContext context, int index) {
                             int j = index;
-                            String img = 'assets/images/azsPhoto.png';
+                            String img = 'assets/images/Astana-TOO_AZS.jpg';
 
 
                             return dataList.length > 0
@@ -275,21 +280,21 @@ class _HomePageState extends State<HomePage> {
                                                       (context, int i) {
                                                         p++;
                                                         if (data[1][index] >= 1000){
-                                                          int v = data[1][p - 1];
+                                                          int v = data[1][p-1];
                                                           litrK = (v / 1000).toString() + text.k;
                                                         } else {
                                                           litrK = data[1][p -1].toString();
                                                         }
 
-                                                        if(data[2][p-1] > 10){
-                                                          NotificationApi().showNotification(2, text.problemState, allAzs[index] + ' ' + data[2][p-1].toString() + text.bar, 1);
-                                                        }else if(data[5][index] > 100 || data[5][index] < 200){
-                                                          NotificationApi().showNotification(5, text.problemState, text.fuelConsumption +data[5][index].toString(), 1);
-                                                        }else if(data[6][index] > 60.0 || data[6][index] < -40.0){
-                                                          NotificationApi().showNotification(6, text.problemState, text.temperature +data[6][index].toString(), 1);
-                                                        }else if(data[1][index] > 100 || data[1][index] < 1000){
-                                                          NotificationApi().showNotification(1, text.problemState, text.fuelQuantity +data[1][index].toString(), 1);
-                                                        }
+                                                        // if(data[2][p-1] > 10){
+                                                        //   NotificationApi().showNotification(2, text.problemState, allAzs[index] + ' ' + data[2][p-1].toString() + text.bar, 1);
+                                                        // }else if(data[5][index] > 100 || data[5][index] < 200){
+                                                        //   NotificationApi().showNotification(5, text.problemState, text.fuelConsumption +data[5][index].toString(), 1);
+                                                        // }else if(data[6][index] > 60.0 || data[6][index] < -40.0){
+                                                        //   NotificationApi().showNotification(6, text.problemState, text.temperature +data[6][index].toString(), 1);
+                                                        // }else if(data[1][index] > 100 || data[1][index] < 1000){
+                                                        //   NotificationApi().showNotification(1, text.problemState, text.fuelQuantity +data[1][index].toString(), 1);
+                                                        // }
 
                                                         return Padding(
                                                           padding:
@@ -357,11 +362,11 @@ class _HomePageState extends State<HomePage> {
                                                                         .asset(
                                                                       'assets/icons/stateIcon.svg',
                                                                       color: data[3][p - 1] ==
-                                                                              1
-                                                                          ? Color(
-                                                                              0xff00FF47)
+                                                                              0
+                                                                          ? Color(0xffC8C8C8
+                                                                              )
                                                                           : Color(
-                                                                              0xffC8C8C8),
+                                                                          0xff00FF47),
                                                                       height:
                                                                           15,
                                                                       width: 15,
@@ -442,11 +447,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<String> photoUrlMethod() async {
-    photoUrl = await FirebaseStorage.instance
-        .ref('user`s photo/')
-        .child(uid + '.jpg')
-        .getDownloadURL();
-
+    photoUrl = await FirebaseStorage.instance.ref('user`s photo/').child(uid + '.jpg').getDownloadURL();
     return photoUrl;
   }
 }

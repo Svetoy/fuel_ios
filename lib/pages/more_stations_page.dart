@@ -32,7 +32,7 @@ class _MoreStationsPageState extends State<MoreStationsPage> {
   Widget build(BuildContext context) {
     var text = AppLocalizations.of(context);
     Size size = MediaQuery.of(context).size;
-    String img = 'assets/images/azsPhoto.png';
+    String img = 'assets/images/Astana-TOO_AZS.jpg';
 
     return Scaffold(
       appBar: AppBar(

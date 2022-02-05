@@ -144,7 +144,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     img = 'assets/images/warningImg.png';
                     NotificationApi().showNotification(
                         index,
-                        'Warning',
+                        text.problemState,
                         text.pipe +
                             pipName[index] +
                             ' ' +
@@ -156,7 +156,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     img = 'assets/images/warningImg.png';
                     NotificationApi().showNotification(
                         index,
-                        'Warning',
+                        text.problemState,
                         text.pipe +
                             pipName[index] +
                             ' ' +
@@ -168,7 +168,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     img = 'assets/images/warningImg.png';
                     NotificationApi().showNotification(
                         index,
-                        'Warning',
+                        text.problemState,
                         text.pipe +
                             flow[index].toString() +
                             ' ' +

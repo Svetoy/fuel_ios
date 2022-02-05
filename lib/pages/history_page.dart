@@ -178,18 +178,7 @@ class _HistoryPageState extends State<HistoryPage> {
                   } else if (status[index] == 'fault') {
                     state = 'assets/icons/notIcon.svg';
                   }
-                  String img = 'assets/images/azsPhoto.png';
-
-                  if(azs[index] == 'NameAzs'){
-                    img = 'assets/images/NameAzs.jpg';
-                  }else if(azs[index] == 'NameAzs2'){
-                    img = 'assets/images/NameAzs2.jpg';
-                  }else if(azs[index] == 'NameAzs3'){
-                    img = 'assets/images/NameAzs3.jpg';
-                  }else{
-                    img = 'assets/images/azsPhoto.png';
-                  }
-
+                  String img = 'assets/images/Astana-TOO_AZS.jpg';
 
                   return Expanded(
                     child: Container(
